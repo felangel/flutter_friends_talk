@@ -109,6 +109,29 @@ Get Started: **https://shorebird.dev**
 
 ---
 
+# 🧑‍🍳 Prep
+
+[.column]
+
+- 💨 Integrated Shorebird
+
+  - Visited: https://console.shorebird.dev
+  - Installed Shorebird CLI
+  - `shorebird init`
+
+- 📦 Created a Release
+
+  - `shorebird release android`
+  - `shorebird release ios-alpha`
+
+- 📱 Submitted to the AppStore and PlayStore
+
+[.column]
+
+![inline fit](../assets/console_01.png)
+
+---
+
 # Let's Fix it Live
 
 # 🧑‍🔧🐦
