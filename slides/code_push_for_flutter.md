@@ -2,9 +2,11 @@ autoscale: true
 footer: @felangelov - Flutter & Friends 2023
 slidenumbers: true
 
-# Flutter Code Push With Shorebird
+# Shorebird: Flutter Code Push
 
 ![inline](../assets/shorebird_logo.png)
+
+### By: Felix Angelov
 
 ---
 
@@ -16,10 +18,13 @@ slidenumbers: true
 
 # 🦸 Flutter Gives Us Superpowers
 
+- 🎯 Dart
 - ⚡️ Hot Reload
 - 📱 Mobile (iOS + Android)
 - 🖥️ Desktop (MacOS, Linux, Windows)
 - 🧩 Declarative UI
+- 🔌 Plugins
+- 🛠️ Developer Tools
 
 ---
 
@@ -35,33 +40,23 @@ slidenumbers: true
 
 ---
 
-# 📅 View the Schedule
-
-![inline fit](../assets/schedule.gif)
+![inline fit](../assets/schedule.png)
 
 ---
 
-# 📝 View Talk Details
-
-[Screenshot of Talk Details]
+![inline fit](../assets/talk_details.png)
 
 ---
 
-# 💖 Favorite Events
-
-[Screenshot of Favorites]
+![inline fit](../assets/favorites.png)
 
 ---
 
-# 🏆 View Sponsors
-
-[Screenshot of Sponsors]
+![inline fit](../assets/sponsors.png)
 
 ---
 
-# ☀️/🌙 Mode
-
-[Screenshot of Settings]
+![inline fit](../assets/settings.png)
 
 ---
 
@@ -120,6 +115,28 @@ Get Started: **https://shorebird.dev**
 
 ---
 
+### 🥳 Update Available
+
+[.column]
+
+![inline](../assets/update_available.png)
+
+[.column]
+
+**👀 Closer Look**
+
+- 🔔 Silent Notification
+
+- 📦 Patch Downloaded Async In Background
+
+- 🔐 Patch Hash Verification On Device
+
+- 🔁 Restart To Boot From Patch
+
+- 🛼 Automatic Rollback On Bad Patch
+
+---
+
 # ✨ Highlights
 
 - ✅ Android 🤖
@@ -137,17 +154,25 @@ Get Started: **https://shorebird.dev**
 - 😴 iOS Runs ~100x Slower (100% Interpreted)
 - 🎈 iOS Patch Sizes Are Large (No Diffing)
 - 📜 Flutter Versions >=3.10.0
+- 🐎 Stable Channel Only
+- 📱 Mobile Platforms Only
 
 ---
 
 # 🤔 How Does Shorebird Work?
 
-- 🏎️ Custom Flutter Engine that includes Shorebird Updater
+- 🏎️ Custom Flutter engine that includes Shorebird updater
 - 🎯 Custom Dart compiler + Custom Dart interpreter
 - ☁️ Compiled binaries hosted on our servers
   - 🙈 We never see your source code
-- 🔌 Dart Bindings to interact with the Updater
+- 🔌 Dart bindings to interact with the updater
   - `package:shorebird_code_push`
+
+---
+
+# 🍰 Layers
+
+![inline](../assets/layers.png)
 
 ---
 
@@ -167,6 +192,12 @@ $ shorebird release android
 $ flutter build ipa --release
 $ shorebird release ios-alpha
 ```
+
+---
+
+# 🏎️ You Are In Control
+
+![inline fit](../assets/package.png)
 
 ---
 
@@ -196,6 +227,7 @@ $ shorebird release ios-alpha
 ---
 
 # 🔌 Add Shorebird To Your App
+
 ## 🗓️ Workshop Tomorrow
 
 ![inline fit](../assets/workshop.png)
@@ -204,9 +236,10 @@ $ shorebird release ios-alpha
 
 # 💬 Chat With Us
 
-![inline fit](../assets/discord_qr.png)
+![inline fit](../assets/discord_qr.png)![inline fit](../assets/x_qr.png)
 
 **https://discord.gg/shorebird**
+**@shorebirddev**
 
 ---
 
