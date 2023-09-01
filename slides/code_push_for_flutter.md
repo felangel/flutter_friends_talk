@@ -140,7 +140,61 @@ Get Started: **https://shorebird.dev**
 
 ---
 
-# Let's Fix it Live
+# 🚀 Initializing Shorebird
+
+```
+$ shorebird init
+✓ Detecting product flavors (0.6s)
+? How should we refer to this app? (flutter_and_friends) flutter_and_friends
+✓ Shorebird is up-to-date (0.6s)
+✓ Flutter install is correct (4.5s)
+
+No issues detected!
+
+🐦 Shorebird initialized successfully!
+
+✅ A shorebird app has been created.
+✅ A "shorebird.yaml" has been created.
+✅ The "pubspec.yaml" has been updated to include "shorebird.yaml" as an asset.
+
+Reference the following commands to get started:
+
+📦 To create a new release use: "shorebird release".
+🚀 To push an update use: "shorebird patch".
+👀 To preview a release use: "shorebird preview".
+
+For more information about Shorebird, visit https://shorebird.dev
+```
+
+---
+
+# ⚙️ Shorebird Configuration
+
+```yaml
+# This file is used to configure the Shorebird updater used by your app.
+# Learn more at https://docs.shorebird.dev
+# This file should be checked into version control.
+
+# This is the unique identifier assigned to your app.
+# Your app_id is not a secret and is just used to identify your app
+# when requesting patches from Shorebird's servers.
+app_id: 8c846e87-1461-4b09-8708-170d78331aca
+
+# auto_update controls if Shorebird should automatically update in the background on launch.
+# If auto_update: false, you will need to use package:shorebird_code_push to trigger updates.
+# https://pub.dev/packages/shorebird_code_push
+auto_update: false
+```
+
+---
+
+# 🧑‍💻 console.shorebird.dev
+
+![inline fit](../assets/console_02.png)![inline fit](../assets/console_03.png)
+
+---
+
+# Now Let's Fix it Live
 
 # 🧑‍🔧🐦
 
@@ -196,7 +250,7 @@ Get Started: **https://shorebird.dev**
 - 🎯 Custom Dart compiler + Custom Dart interpreter
 - ☁️ Compiled binaries hosted on our servers
   - 🙈 We never see your source code
-- 🔌 Dart bindings to interact with the updater
+- 🔌 Optional Dart bindings to interact with the updater
   - `package:shorebird_code_push`
 
 ---
