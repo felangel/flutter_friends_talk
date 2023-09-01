@@ -66,6 +66,10 @@ slidenumbers: true
 
 ---
 
+![inline fit](../assets/meme_5.jpeg)
+
+---
+
 ![inline fit](../assets/exhibit_a.png)
 
 ---
@@ -74,19 +78,15 @@ slidenumbers: true
 
 ---
 
-![inline fit](../assets/meme_01.png)
+![inline fit](../assets/meme_1.png)
 
 ---
 
-![inline fit](../assets/meme_02.jpeg)
+![inline fit](../assets/meme_2.jpeg)
 
 ---
 
-![inline fit](../assets/meme_03.jpeg)
-
----
-
-![inline fit](../assets/meme_04.jpeg)
+![inline fit](../assets/meme_3.jpeg)
 
 ---
 
@@ -94,6 +94,10 @@ slidenumbers: true
 [.text: #ffffff]
 
 ![inline](../assets/shorebird_hero.png)
+
+---
+
+![inline](../assets/issue.png)
 
 ---
 
@@ -106,6 +110,10 @@ slidenumbers: true
 - 💸 Try For Free
 
 Get Started: **https://shorebird.dev**
+
+---
+
+![inline fit](../assets/meme_4.jpeg)
 
 ---
 
@@ -172,7 +180,7 @@ Get Started: **https://shorebird.dev**
 
 ---
 
-# ⚠️ Current Status
+# ⚠️ Current Limitations
 
 - 😴 iOS Runs ~100x Slower (100% Interpreted)
 - 🎈 iOS Patch Sizes Are Large (No Diffing)
@@ -201,19 +209,48 @@ Get Started: **https://shorebird.dev**
 
 # 🫳 Drop-In Replacement
 
-[.code-highlight: all]
-[.code-highlight: 1]
-[.code-highlight: 2]
-[.code-highlight: 4]
-[.code-highlight: 5]
-[.code-highlight: all]
+```sh
+# Flutter CLI
+$ flutter build appbundle --release
+$ flutter build ipa --release
+
+# Shorebird CLI
+$ shorebird release android
+$ shorebird release ios-alpha
+```
+
+---
+
+# 🚦 Continuous Integration
+
+[.column]
 
 ```sh
-$ flutter build appbundle --release
-$ shorebird release android
+# Generate a CI Token
+$ shorebird login:ci
+```
 
-$ flutter build ipa --release
-$ shorebird release ios-alpha
+[.column]
+
+```yaml
+steps:
+  - name: 📚 Git Checkout
+    uses: actions/checkout@v3
+
+  - name: 🐦 Setup Shorebird
+    uses: shorebirdtech/setup-shorebird@v0
+    with:
+      flutter-version: 3.13.2
+
+  - name: 🤖 Patch Android
+    run: shorebird patch android --force
+    env:
+      SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
+
+  - name: 🍎 Patch iOS
+    run: shorebird patch ios-alpha --force
+    env:
+      SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
 ```
 
 ---
@@ -229,14 +266,14 @@ $ shorebird release ios-alpha
 [.column]
 **Play Store**
 
-> “An app … may not modify, replace, or update itself using any method other than Google Play's update mechanism.” … “This restriction does not apply to code that runs in a virtual machine or an interpreter”
+“An app … may not modify, replace, or update itself using any method other than Google Play's update mechanism.” … “This restriction does not apply to code that runs in a virtual machine or an interpreter”
 
 **Shorebird uses the Dart Virtual Machine. Similar to how other apps use JavaScript or Lua.**
 
 [.column]
 **App Store**
 
-> 3.2.2. “Application may not download or install executable code. Interpreted code may be downloaded…”
+3.2.2. “Application may not download or install executable code. Interpreted code may be downloaded…”
 
 **Shorebird uses a custom Dart interpreter on iOS to both comply with store guidelines and provide excellent performance.**
 
