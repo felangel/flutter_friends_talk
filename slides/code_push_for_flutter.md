@@ -222,14 +222,20 @@ auto_update: false
 
 ---
 
+# Android & iOS
+
+# 🥳🤖🍎
+
+---
+
 # ✨ Highlights
 
 - ✅ Android 🤖
+- ☑️ iOS 🍎 (alpha)
 - ✅ Flavors 🍧
 - ✅ Add-To-App 🧩
 - ✅ CI Integration 🚦 (GitHub, Codemagic)
 - ✅ Multiple Flutter Versions 🐦
-- ☑️ iOS 🍎 (alpha)
 - 🚧 Asset Support 🖼️ (coming soon)
 
 ---
@@ -275,6 +281,12 @@ $ shorebird release ios-alpha
 
 ---
 
+# 🏎️ You Are In Control
+
+![inline fit](../assets/package.png)
+
+---
+
 # 🚦 Continuous Integration
 
 [.column]
@@ -306,12 +318,6 @@ steps:
     env:
       SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
 ```
-
----
-
-# 🏎️ You Are In Control
-
-![inline fit](../assets/package.png)
 
 ---
 
